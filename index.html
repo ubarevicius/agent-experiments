@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agent experiments</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        #mainCanvas {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <script src="node_modules/ccapture.js/src/CCapture.js"></script>
+    <script src="node_modules/ccapture.js/src/gif.js"></script>
+    <script src="node_modules/ccapture.js/src/gif.worker.js"></script>
+    <script src="node_modules/ccapture.js/src/webm-writer-0.2.0.js"></script>
+    <script src="node_modules/ccapture.js/src/download.js"></script>
+    <script src="node_modules/ccapture.js/src/Whammy.js"></script>
+    <script src="node_modules/ccapture.js/src/tar.js"></script>
+</head>
+
+<body>
+    <canvas id="mainCanvas"></canvas>
+    <script src="bundle.js"></script>
+    <div style="color: white; z-index: 1000; position: absolute; top: 0; left: 0">
+        <a download="info.txt" href="" id="followers" 
+        >Download Followers</a>
+        <a download="info.txt" href="" id="attractors" 
+        >Download Attractors</a>
+        <button type="button" id="start">></button>
+        <button type="button" id="stop">[]</button>
+    </div>
+</body>
+
+</html>
